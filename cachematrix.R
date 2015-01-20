@@ -4,7 +4,6 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   a <- NULL
-<<<<<<< HEAD
   SetMatrix <- function(y) {
     x <<- y
     a <<- NULL
@@ -14,19 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
   GetInverse <- function() a
   list(SetMatrix = SetMatrix, GetMatrix = GetMatrix, SetInverse = SetInverse,
        GetInverse = GetInverse)
-=======
-  setMatrix = function(y) {
-    x <<- y
-    a <<- NULL
-  }
-  GetMatrix = function() x
-  SetInverse = function(Inverse) a <<- Inverse
-  GetInverse = function() a
-
->>>>>>> e4ee0379fb60a61c8e4c014c91022d2d5b956f10
 }
-
-
 ## This function computes the inverse of the special matrix or retrieves 
 ## the inverse if it has already been calculated.
 
